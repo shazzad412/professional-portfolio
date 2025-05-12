@@ -1,17 +1,128 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>モハンマド・シャッザド・ホッサイン - ポートフォリオ</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      background: #f4f4f4;
+      padding: 30px 0;
+    }
+    .profile-pic {
+      max-width: 150px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: block;
+    }
+    .btn, .btn-scroll {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 10px 5px;
+    }
+    .btn:hover, .btn-scroll:hover {
+      background-color: #0056b3;
+    }
+    section {
+      margin-top: 40px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    label, input, textarea, button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, I'm [Your Name]</h1>
-  <p>This is my professional portfolio.</p>
-  <button onclick="showMessage()">Click Me</button>
-<script src="script.js"></script>
+  <header>
+    <div class="container">
+      <img src="c:\Users\fn0020\Downloads\shazzad.jpg.jpg" alt="プロフィール写真" class="profile-pic"  width="100%" />
+      <h1>モハンマド・シャッザド・ホッサイン</h1>
+      <p>コンピュータ工学卒業 | 日本の専門学校でフルスタック開発を学習中</p>
+      <a href="#contact" class="btn">お問い合わせ</a>
+      <a href="#more" class="btn-scroll">もっと見る</a>
+    </div>`
+  </header>
 
+  <section id="about">
+    <div class="container">
+      <h2>自己紹介</h2>
+      <p>こんにちは！私はモハンマド・シャッザド・ホッサインです。バングラデシュ出身で、現在日本の専門学校にてコンピュータ・フルスタックエンジニアリングを専攻している2年生です。来日前にバングラデシュで4年間のコンピュータ・ディプロマコースを修了しました。</p>
+      <p>フロントエンドとバックエンドの両方の技術を学びながら、実践的なプロジェクトでスキルを伸ばしています。</p>
+      <ul>
+        <li><strong>学歴（バングラデシュ）:</strong> 4年間のせんいこうがく・ディプロマ（ポリテクニック）</li>
+        <li><strong>現在の学習:</strong> 日本の専門学校にてコンピュータ・フルスタックエンジニアリング専攻（2年目）</li>
+        <li><strong>スキル:</strong> HTML, CSS, JavaScript, React, Node.js, MongoDB, Git, 問題解決能力, チームワーク</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>プロジェクトと経験</h2>
+      <p>以下は、学業および個人プロジェクトを通じて取り組んできた経験です：</p>
+      <ul>
+        <li><strong>ポートフォリオウェブサイト</strong> – HTML, CSS, JavaScriptを使って個人のポートフォリオを作成。</li>
+        <li><strong>ToDo アプリ</strong> – ReactとNode.jsを使用してユーザー登録・管理機能付きタスク管理アプリを開発。</li>
+        <li><strong>RESTful API 開発</strong> – Express.jsとMongoDBを使用してバックエンドAPIの構築。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="more">
+    <div class="container">
+      <h2>もっと私について</h2>
+      <p>私は常に新しい技術に興味があり、学ぶことが大好きです。毎日、新しい技術を学び、自分のスキルを向上させることに取り組んでいます。</p>
+      <p>将来は国際的に活躍できるフルスタック開発者になりたいと思っています。そして、バングラデシュの誇りを高めるために国際的な場でも頑張りたいです。また、チームワーク、文化活動、リーダーシップにも関心があります。</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>お問い合わせ</h2>
+      <p>就職、インターンシップ、または共同作業についてご連絡いただける場合は、以下のフォームをご利用ください。</p>
+      <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">メッセージ</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">送信</button>
+      </form>
+    </div>
+  </section>
 </body>
 </html>
